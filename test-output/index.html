@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Test_Suite" class="navigator-link ">
+                    <span>C:\Users\gtvignes\Tutorial-Workspace\System_Browser_Testing\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 1 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods failed suite-Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods failed suite-Test_Suite"> (show)</a> <!-- show-methods failed suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Ecommerce_Amazon" class="method navigator-link" hash-for-method="HpLaptop">HpLaptop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods passed suite-Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods passed suite-Test_Suite"> (show)</a> <!-- show-methods passed suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="AlertHandle">AlertHandle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Ecommerce_Amazon" class="method navigator-link" hash-for-method="AppleLaptop">AppleLaptop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Ecommerce_Amazon" class="method navigator-link" hash-for-method="DellLaptop">DellLaptop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="DragDrop">DragDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="DropDown">DropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Ecommerce_Flipkart" class="method navigator-link" hash-for-method="FlipkartSellerInfo">FlipkartSellerInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="HandleFrames">HandleFrames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="HyperLink">HyperLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Ecommerce_Amazon" class="method navigator-link" hash-for-method="InvalidAmazonLogin">InvalidAmazonLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Ecommerce_Flipkart" class="method navigator-link" hash-for-method="InvalidFlipkartLogin">InvalidFlipkartLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Ecommerce_Amazon" class="method navigator-link" hash-for-method="LenovoLaptop">LenovoLaptop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="LocateAndClick">LocateAndClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Automobile_Tesla" class="method navigator-link" hash-for-method="Model3">Model3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Automobile_Tesla" class="method navigator-link" hash-for-method="ModelS">ModelS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Automobile_Tesla" class="method navigator-link" hash-for-method="ModelX">ModelX</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Automobile_Tesla" class="method navigator-link" hash-for-method="ModelY">ModelY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="RadioButton">RadioButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Basics" class="method navigator-link" hash-for-method="checkbox">checkbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="TestCase.Mobile_Apple" class="method navigator-link" hash-for-method="iPhones">iPhones</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_Suite" class="panel Test_Suite">
+          <div class="suite-Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCase.Ecommerce_Amazon</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HpLaptop">
+                  </a> <!-- HpLaptop -->
+                  <span class="method-name">HpLaptop</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-cel-widget=&apos;search_result_2&apos;]//a&quot;}
+  (Session info: chrome=117.0.5938.134)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba87791c5cb439b71950b7d45cb9beb8, findElement {using=xpath, value=//div[@data-cel-widget=&apos;search_result_2&apos;]//a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\gtvignes\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60192/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba87791c5cb439b71950b7d45cb9beb8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at TestCase.Ecommerce_Amazon.HpLaptop(Ecommerce_Amazon.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-failed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.Automobile_Tesla</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Model3">
+                  </a> <!-- Model3 -->
+                  <span class="method-name">Model3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ModelS">
+                  </a> <!-- ModelS -->
+                  <span class="method-name">ModelS</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ModelX">
+                  </a> <!-- ModelX -->
+                  <span class="method-name">ModelX</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ModelY">
+                  </a> <!-- ModelY -->
+                  <span class="method-name">ModelY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.Mobile_Apple</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="iPhones">
+                  </a> <!-- iPhones -->
+                  <span class="method-name">iPhones</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.Ecommerce_Flipkart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlipkartSellerInfo">
+                  </a> <!-- FlipkartSellerInfo -->
+                  <span class="method-name">FlipkartSellerInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidFlipkartLogin">
+                  </a> <!-- InvalidFlipkartLogin -->
+                  <span class="method-name">InvalidFlipkartLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.Basics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AlertHandle">
+                  </a> <!-- AlertHandle -->
+                  <span class="method-name">AlertHandle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DragDrop">
+                  </a> <!-- DragDrop -->
+                  <span class="method-name">DragDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropDown">
+                  </a> <!-- DropDown -->
+                  <span class="method-name">DropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HandleFrames">
+                  </a> <!-- HandleFrames -->
+                  <span class="method-name">HandleFrames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HyperLink">
+                  </a> <!-- HyperLink -->
+                  <span class="method-name">HyperLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LocateAndClick">
+                  </a> <!-- LocateAndClick -->
+                  <span class="method-name">LocateAndClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RadioButton">
+                  </a> <!-- RadioButton -->
+                  <span class="method-name">RadioButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkbox">
+                  </a> <!-- checkbox -->
+                  <span class="method-name">checkbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.Ecommerce_Amazon</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AppleLaptop">
+                  </a> <!-- AppleLaptop -->
+                  <span class="method-name">AppleLaptop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DellLaptop">
+                  </a> <!-- DellLaptop -->
+                  <span class="method-name">DellLaptop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidAmazonLogin">
+                  </a> <!-- InvalidAmazonLogin -->
+                  <span class="method-name">InvalidAmazonLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LenovoLaptop">
+                  </a> <!-- LenovoLaptop -->
+                  <span class="method-name">LenovoLaptop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+        </div> <!-- panel Test_Suite -->
+        <div panel-name="test-xml-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\gtvignes\Tutorial-Workspace\System_Browser_Testing\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test case&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCase.Ecommerce_Amazon&quot;/&gt;
+      &lt;class name=&quot;TestCase.Ecommerce_Flipkart&quot;/&gt;
+      &lt;class name=&quot;TestCase.Mobile_Apple&quot;/&gt;
+      &lt;class name=&quot;TestCase.Automobile_Tesla&quot;/&gt;
+      &lt;class name=&quot;TestCase.Basics&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test case --&gt;
+&lt;/suite&gt; &lt;!-- Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test case (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_Suite');
+function tableData_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AppleLaptop')
+data.setCell(0, 2, 'TestCase.Ecommerce_Amazon')
+data.setCell(0, 3, 40134);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LenovoLaptop')
+data.setCell(1, 2, 'TestCase.Ecommerce_Amazon')
+data.setCell(1, 3, 31320);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LocateAndClick')
+data.setCell(2, 2, 'TestCase.Basics')
+data.setCell(2, 3, 29023);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DellLaptop')
+data.setCell(3, 2, 'TestCase.Ecommerce_Amazon')
+data.setCell(3, 3, 28934);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'HpLaptop')
+data.setCell(4, 2, 'TestCase.Ecommerce_Amazon')
+data.setCell(4, 3, 16312);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ModelX')
+data.setCell(5, 2, 'TestCase.Automobile_Tesla')
+data.setCell(5, 3, 8583);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ModelY')
+data.setCell(6, 2, 'TestCase.Automobile_Tesla')
+data.setCell(6, 3, 7129);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'iPhones')
+data.setCell(7, 2, 'TestCase.Mobile_Apple')
+data.setCell(7, 3, 6940);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'InvalidAmazonLogin')
+data.setCell(8, 2, 'TestCase.Ecommerce_Amazon')
+data.setCell(8, 3, 6632);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Model3')
+data.setCell(9, 2, 'TestCase.Automobile_Tesla')
+data.setCell(9, 3, 6491);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ModelS')
+data.setCell(10, 2, 'TestCase.Automobile_Tesla')
+data.setCell(10, 3, 5099);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'FlipkartSellerInfo')
+data.setCell(11, 2, 'TestCase.Ecommerce_Flipkart')
+data.setCell(11, 3, 3901);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'HyperLink')
+data.setCell(12, 2, 'TestCase.Basics')
+data.setCell(12, 3, 2280);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'DropDown')
+data.setCell(13, 2, 'TestCase.Basics')
+data.setCell(13, 3, 1619);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'DragDrop')
+data.setCell(14, 2, 'TestCase.Basics')
+data.setCell(14, 3, 1362);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'HandleFrames')
+data.setCell(15, 2, 'TestCase.Basics')
+data.setCell(15, 3, 1297);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'AlertHandle')
+data.setCell(16, 2, 'TestCase.Basics')
+data.setCell(16, 3, 988);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkbox')
+data.setCell(17, 2, 'TestCase.Basics')
+data.setCell(17, 3, 908);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'RadioButton')
+data.setCell(18, 2, 'TestCase.Basics')
+data.setCell(18, 3, 320);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'InvalidFlipkartLogin')
+data.setCell(19, 2, 'TestCase.Ecommerce_Flipkart')
+data.setCell(19, 3, 230);
+window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Test_Suite">
+              </div> <!-- times-div-Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Automobile_Tesla</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">LaunchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Basics</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">LaunchBrowser</span>
+                <span class="method-start">6046 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Ecommerce_Amazon</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">LaunchBrowser</span>
+                <span class="method-start">9204 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Ecommerce_Flipkart</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">LaunchBrowser</span>
+                <span class="method-start">19167 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Mobile_Apple</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">LaunchBrowser</span>
+                <span class="method-start">37004 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Ecommerce_Amazon</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidAmazonLogin</span>
+                <span class="method-start">43973 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AppleLaptop</span>
+                <span class="method-start">50611 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LenovoLaptop</span>
+                <span class="method-start">90747 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">HpLaptop</span>
+                <span class="method-start">122068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DellLaptop</span>
+                <span class="method-start">138384 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Ecommerce_Flipkart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidFlipkartLogin</span>
+                <span class="method-start">167320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FlipkartSellerInfo</span>
+                <span class="method-start">167551 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Mobile_Apple</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">iPhones</span>
+                <span class="method-start">171459 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Automobile_Tesla</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ModelS</span>
+                <span class="method-start">178400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Model3</span>
+                <span class="method-start">183501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ModelX</span>
+                <span class="method-start">189995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ModelY</span>
+                <span class="method-start">198580 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Basics</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LocateAndClick</span>
+                <span class="method-start">205711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DropDown</span>
+                <span class="method-start">234736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AlertHandle</span>
+                <span class="method-start">236360 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RadioButton</span>
+                <span class="method-start">237350 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkbox</span>
+                <span class="method-start">237675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HandleFrames</span>
+                <span class="method-start">238587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DragDrop</span>
+                <span class="method-start">239885 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HyperLink</span>
+                <span class="method-start">241248 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Automobile_Tesla</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">243532 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Basics</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">244193 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Ecommerce_Amazon</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">244745 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Ecommerce_Flipkart</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">245333 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Mobile_Apple</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">245937 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

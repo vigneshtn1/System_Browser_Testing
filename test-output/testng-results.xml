@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="19" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-04T17:32:40 IST" name="Test Suite" finished-at="2023-10-04T17:36:47 IST" duration-ms="246453">
+    <groups>
+    </groups>
+    <test started-at="2023-10-04T17:32:40 IST" name="Test case" finished-at="2023-10-04T17:36:47 IST" duration-ms="246453">
+      <class name="TestCase.Ecommerce_Amazon">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:TestCase.Ecommerce_Amazon@3ba9ad43]" started-at="2023-10-04T17:32:49 IST" name="LaunchBrowser" finished-at="2023-10-04T17:32:59 IST" duration-ms="9963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="InvalidAmazonLogin()[pri:0, instance:TestCase.Ecommerce_Amazon@3ba9ad43]" started-at="2023-10-04T17:33:24 IST" name="InvalidAmazonLogin" finished-at="2023-10-04T17:33:31 IST" duration-ms="6632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidAmazonLogin -->
+        <test-method signature="AppleLaptop()[pri:1, instance:TestCase.Ecommerce_Amazon@3ba9ad43]" started-at="2023-10-04T17:33:31 IST" name="AppleLaptop" finished-at="2023-10-04T17:34:11 IST" duration-ms="40134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppleLaptop -->
+        <test-method signature="LenovoLaptop()[pri:2, instance:TestCase.Ecommerce_Amazon@3ba9ad43]" started-at="2023-10-04T17:34:11 IST" name="LenovoLaptop" finished-at="2023-10-04T17:34:42 IST" duration-ms="31320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LenovoLaptop -->
+        <test-method signature="HpLaptop()[pri:3, instance:TestCase.Ecommerce_Amazon@3ba9ad43]" started-at="2023-10-04T17:34:42 IST" name="HpLaptop" finished-at="2023-10-04T17:34:59 IST" duration-ms="16312" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-cel-widget='search_result_2']//a"}
+  (Session info: chrome=117.0.5938.134)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba87791c5cb439b71950b7d45cb9beb8, findElement {using=xpath, value=//div[@data-cel-widget='search_result_2']//a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\gtvignes\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60192/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba87791c5cb439b71950b7d45cb9beb8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-cel-widget='search_result_2']//a"}
+  (Session info: chrome=117.0.5938.134)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba87791c5cb439b71950b7d45cb9beb8, findElement {using=xpath, value=//div[@data-cel-widget='search_result_2']//a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\gtvignes\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60192/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba87791c5cb439b71950b7d45cb9beb8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at TestCase.Ecommerce_Amazon.HpLaptop(Ecommerce_Amazon.java:129)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HpLaptop -->
+        <test-method signature="DellLaptop()[pri:4, instance:TestCase.Ecommerce_Amazon@3ba9ad43]" started-at="2023-10-04T17:34:59 IST" name="DellLaptop" finished-at="2023-10-04T17:35:28 IST" duration-ms="28934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DellLaptop -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestCase.Ecommerce_Amazon@3ba9ad43]" started-at="2023-10-04T17:36:45 IST" name="CloseBrowser" finished-at="2023-10-04T17:36:46 IST" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- TestCase.Ecommerce_Amazon -->
+      <class name="TestCase.Ecommerce_Flipkart">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:TestCase.Ecommerce_Flipkart@3c130745]" started-at="2023-10-04T17:32:59 IST" name="LaunchBrowser" finished-at="2023-10-04T17:33:17 IST" duration-ms="17837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="InvalidFlipkartLogin()[pri:0, instance:TestCase.Ecommerce_Flipkart@3c130745]" started-at="2023-10-04T17:35:28 IST" name="InvalidFlipkartLogin" finished-at="2023-10-04T17:35:28 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidFlipkartLogin -->
+        <test-method signature="FlipkartSellerInfo()[pri:1, instance:TestCase.Ecommerce_Flipkart@3c130745]" started-at="2023-10-04T17:35:28 IST" name="FlipkartSellerInfo" finished-at="2023-10-04T17:35:32 IST" duration-ms="3901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlipkartSellerInfo -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestCase.Ecommerce_Flipkart@3c130745]" started-at="2023-10-04T17:36:46 IST" name="CloseBrowser" finished-at="2023-10-04T17:36:46 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- TestCase.Ecommerce_Flipkart -->
+      <class name="TestCase.Basics">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:32:46 IST" name="LaunchBrowser" finished-at="2023-10-04T17:32:49 IST" duration-ms="3158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="LocateAndClick()[pri:0, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:06 IST" name="LocateAndClick" finished-at="2023-10-04T17:36:35 IST" duration-ms="29023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocateAndClick -->
+        <test-method signature="DropDown()[pri:1, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:35 IST" name="DropDown" finished-at="2023-10-04T17:36:37 IST" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDown -->
+        <test-method signature="AlertHandle()[pri:2, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:37 IST" name="AlertHandle" finished-at="2023-10-04T17:36:38 IST" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertHandle -->
+        <test-method signature="RadioButton()[pri:3, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:38 IST" name="RadioButton" finished-at="2023-10-04T17:36:38 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RadioButton -->
+        <test-method signature="checkbox()[pri:4, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:38 IST" name="checkbox" finished-at="2023-10-04T17:36:39 IST" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox -->
+        <test-method signature="HandleFrames()[pri:5, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:39 IST" name="HandleFrames" finished-at="2023-10-04T17:36:40 IST" duration-ms="1297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandleFrames -->
+        <test-method signature="DragDrop()[pri:6, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:40 IST" name="DragDrop" finished-at="2023-10-04T17:36:41 IST" duration-ms="1362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragDrop -->
+        <test-method signature="HyperLink()[pri:7, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:41 IST" name="HyperLink" finished-at="2023-10-04T17:36:44 IST" duration-ms="2280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HyperLink -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestCase.Basics@703580bf]" started-at="2023-10-04T17:36:44 IST" name="CloseBrowser" finished-at="2023-10-04T17:36:45 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- TestCase.Basics -->
+      <class name="TestCase.Mobile_Apple">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:TestCase.Mobile_Apple@470f1802]" started-at="2023-10-04T17:33:17 IST" name="LaunchBrowser" finished-at="2023-10-04T17:33:24 IST" duration-ms="6932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="iPhones()[pri:0, instance:TestCase.Mobile_Apple@470f1802]" started-at="2023-10-04T17:35:32 IST" name="iPhones" finished-at="2023-10-04T17:35:39 IST" duration-ms="6940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iPhones -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestCase.Mobile_Apple@470f1802]" started-at="2023-10-04T17:36:46 IST" name="CloseBrowser" finished-at="2023-10-04T17:36:47 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- TestCase.Mobile_Apple -->
+      <class name="TestCase.Automobile_Tesla">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:TestCase.Automobile_Tesla@63021689]" started-at="2023-10-04T17:32:40 IST" name="LaunchBrowser" finished-at="2023-10-04T17:32:46 IST" duration-ms="6043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ModelS()[pri:0, instance:TestCase.Automobile_Tesla@63021689]" started-at="2023-10-04T17:35:39 IST" name="ModelS" finished-at="2023-10-04T17:35:44 IST" duration-ms="5099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModelS -->
+        <test-method signature="Model3()[pri:1, instance:TestCase.Automobile_Tesla@63021689]" started-at="2023-10-04T17:35:44 IST" name="Model3" finished-at="2023-10-04T17:35:50 IST" duration-ms="6491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Model3 -->
+        <test-method signature="ModelX()[pri:2, instance:TestCase.Automobile_Tesla@63021689]" started-at="2023-10-04T17:35:50 IST" name="ModelX" finished-at="2023-10-04T17:35:59 IST" duration-ms="8583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModelX -->
+        <test-method signature="ModelY()[pri:2, instance:TestCase.Automobile_Tesla@63021689]" started-at="2023-10-04T17:35:59 IST" name="ModelY" finished-at="2023-10-04T17:36:06 IST" duration-ms="7129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModelY -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestCase.Automobile_Tesla@63021689]" started-at="2023-10-04T17:36:44 IST" name="CloseBrowser" finished-at="2023-10-04T17:36:44 IST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- TestCase.Automobile_Tesla -->
+    </test> <!-- Test case -->
+  </suite> <!-- Test Suite -->
+</testng-results>
